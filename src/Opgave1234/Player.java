@@ -1,3 +1,5 @@
+package Opgave1234;
+
 public class Player {
 //opgave 4
     private String name;
@@ -14,7 +16,7 @@ public class Player {
     }
     @Override
     public String toString(){
-        return "Player: " + name + " Skill level: " + skillLevel;
+        return "Opgave1234.Player: " + name + " Skill level: " + skillLevel;
     }
 
     public int getSkillLevel(){

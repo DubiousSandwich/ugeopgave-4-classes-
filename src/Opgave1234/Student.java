@@ -1,3 +1,5 @@
+package Opgave1234;
+
 public class Student {
 
     //opgave 1

@@ -1,3 +1,5 @@
+package Opgave1234;
+
 import java.util.ArrayList;
 
 public class Team {
@@ -12,7 +14,7 @@ public class Team {
 
     public void addPlayer(Player p){
         players.add(p);
-        System.out.println("Player " + p.toString() + " added!");
+        System.out.println(p.toString() + " added!");
     }
 
     public int getAverageSkill(){
@@ -25,12 +27,19 @@ public class Team {
     }
 
     public void printTeam(){
-        System.out.println(teamName);
+        System.out.println("\n" + teamName);
         for (Player player : players){
             System.out.println(player.toString());
         }
     }
 
-    public void compete()
+    public void compete(Team opponent){
+        System.out.println("\n" + this.teamName + " competes against " + opponent.teamName + "\n");
+        if (this.getAverageSkill() > opponent.getAverageSkill()){
+            System.out.println(this.teamName + " wins!");
+        } else if (opponent.getAverageSkill() > this.getAverageSkill()){
+            System.out.println(opponent.teamName + " wins!");
+        }
+    }
 
 }

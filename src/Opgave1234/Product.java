@@ -1,3 +1,5 @@
+package Opgave1234;
+
 public class Product {
 //opgave 2
     String name;

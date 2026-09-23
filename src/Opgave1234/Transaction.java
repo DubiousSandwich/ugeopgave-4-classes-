@@ -1,3 +1,5 @@
+package Opgave1234;
+
 public class Transaction {
 //opgave 3
     private String type;
