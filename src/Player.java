@@ -17,4 +17,8 @@ public class Player {
         return "Player: " + name + " Skill level: " + skillLevel;
     }
 
+    public int getSkillLevel(){
+        return skillLevel;
+    }
+
 }
